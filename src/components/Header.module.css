@@ -1,0 +1,81 @@
+/* Container principal do cabeçalho */
+.HeaderContainer {
+    display: flex; /* Define o layout como flexbox para organizar os elementos horizontalmente */
+    width: auto; /* Largura total do container */
+    height: 135px; /* Altura total do container */
+    justify-content: space-between;
+    padding: 0 64px;
+    background: #F4EEEC;
+    box-shadow: #787790;
+    border-radius: 10px;
+}
+
+/* Estilização do logo dentro do cabeçalho */
+.HeaderLogo {
+    width: 200px; /* Largura da imagem do logo */
+    height: 200px; /* Altura da imagem do logo */
+}
+
+/* Container de navegação */
+.HeaderNav {
+    display: flex; /* Define o layout como flexbox para alinhar os itens horizontalmente */
+    width: auto; /* Largura total do container de navegação */
+    height: 80px; /* Altura do container de navegação */
+    justify-content: space-between; /* Distribui os itens igualmente com espaço entre eles */
+    flex-shrink: 0; /* Impede que o container diminua quando o espaço for reduzido */
+    margin-top: 24px;
+}
+
+/* Lista não ordenada dentro da navegação */
+.HeaderNav ul {
+    display: flex; /* Organiza os itens da lista horizontalmente */
+    align-items: center;
+    list-style: none; /* Remove os marcadores de lista padrão */
+    padding: 0; /* Remove o preenchimento interno padrão */
+    margin: 0; /* Remove as margens padrão */
+    gap: 32px;
+}
+
+/* Links de navegação dentro da lista */
+.HeaderNav ul li a {
+    color: #787790; /* Define a cor do texto dos links */
+    text-align: center; /* Alinha o texto dos links ao centro */
+    font-family: "Josefin Slab", serif; /* Define a fonte do texto */
+    font-size: 20px; /* Define o tamanho da fonte */
+    font-weight: 700; /* Define o peso da fonte (negrito leve) */
+    text-decoration: none; /* Remove o sublinhado dos links */
+}
+
+/* Estilo para os links ao passar o mouse */
+.HeaderNav ul li a:hover {
+    color: #000; /* Altera a cor do texto dos links ao passar o mouse */
+}
+
+
+.HeaderButton {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 36px;
+    height: auto;
+    width: auto;
+
+}
+
+.HeaderButton button{
+    color: #787790; /* Define a cor do texto dos links */
+    text-align: center; /* Alinha o texto dos links ao centro */
+    font-family: "Josefin Slab", serif; /* Define a fonte do texto */
+    font-size: 16px; /* Define o tamanho da fonte */
+    font-weight: 700; /* Define o peso da fonte (negrito leve) */
+    text-decoration: none; /* Remove o sublinhado dos links */
+    height: 36px;
+    width: auto;
+    border-radius: 6px;
+    border: 1px solid #CCCBCB;
+}
+
+.HeaderButton button:hover {
+    color: #000; /* Altera a cor do texto dos links ao passar o mouse */
+    cursor: pointer;
+}
