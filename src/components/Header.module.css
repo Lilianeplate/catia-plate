@@ -79,3 +79,9 @@
     color: #000; /* Altera a cor do texto dos links ao passar o mouse */
     cursor: pointer;
 }
+
+
+
+.ButtonCartShopping {
+    background-color: url ('/cart-shopping-solid.svg');
+}

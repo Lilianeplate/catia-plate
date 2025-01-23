@@ -1,6 +1,10 @@
 import styles from './Header.module.css';
 
 function Header() {
+
+    function cadastrarUsuario () {
+        console.log('Cadastrou!!!')
+    }
     return (
         <div className={styles.HeaderContainer}>
             <div>
@@ -25,8 +29,10 @@ function Header() {
             </div>
 
             <div className= {styles.HeaderButton}>
-                <button>Entre</button>
-                <button>Cadastre-se</button>
+                <button><i class="fa-solid fa-cart-shopping"></i> Carrinho </button>
+                <button><i class="fa-solid fa-user"></i> Entre</button>
+                <button onClick={cadastrarUsuario}><i class="fa-solid fa-pen-to-square"></i> Cadastre-se</button>
+
             </div>
         </div>
     );
